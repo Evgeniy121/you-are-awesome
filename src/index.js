@@ -22,8 +22,12 @@ incrementor.valueOf = function() {
     return con;
   }
   incr=0;
+ this.in = 1;
 const asyncIncrementor = () => {
 
+
+
+  return this.in++;
 
 };
 const createIncrementer = () => {};
