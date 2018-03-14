@@ -7,7 +7,12 @@ const createNotEnumerableProperty = (Name) => {
     return s;
 
 };
-const createProtoMagicObject = () => {};
+const createProtoMagicObject = () => {
+
+var fun =  Function();
+      fun.prototype = fun.__proto__;
+      return fun;
+      };
 const incrementor = () => {
 con++;
 return  incrementor;
@@ -23,7 +28,7 @@ const asyncIncrementor = () => {
 };
 const createIncrementer = () => {};
 
-// return same argument not earlier than in one second, and not later, than in two
+
 const returnBackInSecond = () => {};
 const getDeepPropertiesCount = () => {};
 const createSerializedObject = () => {};
